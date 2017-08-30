@@ -10,5 +10,6 @@
  <code>data-ng-repeat</code> is the main angularjs directive, needed to use into the html elements for adding or removing similar items hence you can add/remove an item from left box to the right box, or vice versa
  
  you can see the performed project in this link: https://alirezakay.github.io/projects/phase1/AddRemoveBox-AngularJS/
- 
-#html #css #javascript #angularjs
+```
+#html #css #javascript #angularjs 
+```
