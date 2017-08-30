@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AddRemoveBox</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> <!--include angularJs-->
+
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+<div class="container" ng-app="Add_Remove_Box" ng-controller="Ctrl">
+    <fieldset class="addItems">
+        <legend>Insert Items</legend>
+        <select ng-model="selectedSide">
+            <option ng-repeat="choice in choices">{{choice}}</option>
+        </select>
+        <input type="text" ng-model="choice.name" name="" placeholder="Enter The Item Name">
+        <button class="button insert" value="insert" ng-click="insert($event)">Insert</button>
+    </fieldset>
+    <div class="box leftBox">
+        <div>
+            <div id="{{left.name}}" ng-click="clicked($event, 0)" data-ng-repeat="left in lefts">{{left.name}}</div>
+        </div>
+    </div>
+    <div class="box button_holder">
+        <button ng-click="add()" class="button button-blue">ADD ></button>
+        <button ng-click="remove()" class="button button-red">< REMOVE</button>
+        <button ng-click="addAll()" class="button button-blue button-dark">ADD ALL >></button>
+        <button ng-click="removeAll()" class="button button-red button-dark"><< REMOVE ALL</button>
+        <button ng-click="deleteChoice()" class="button delete">X</button>
+    </div>
+    <div class="box rightBox">
+        <div>
+            <div ng-click="clicked($event, 1)" data-ng-repeat="right in rights">{{right.name}}</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    height: 100vh;
+    border: #E64A19 inset .7vh;
+
+    background: #616161;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.addItems{
+    height: 10vh;
+    margin-bottom: 5vh;
+}
+.box{
+    float: left;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    height: 80vh;
+    border: #cfcfcf outset 2px;
+    color: #eee;
+    font-size: medium;
+}
+.box > div{
+    border: #FFF59D ridge 2px;
+    border-bottom: none;
+    border-radius: 5px;
+}
+.box > div > div{
+    padding: 7px;
+    border-bottom: #FFF59D ridge 2px;
+
+}
+.box > div >div:hover{
+    background-color: rgba(100,150,220,.5);
+    transition: background-color .4s ease;
+}
+.box > button{
+    display: inline-block;
+    width: 70%;
+    margin: 5% 15%;
+}
+.button{
+    padding: 10px 24px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 2px 5px 10px rgba(22,22, 22, .1);
+}
+.button:hover{
+    transition: all 60ms ease;
+    opacity: .95;
+    box-shadow: #444 0 3px 3px 0;
+}
+.button-blue {
+    color: #FFFFFF;
+    background: #416dea;
+}
+.button-red {
+    color: #FFFFFF;
+    background: #F32C52;
+}
+.button-dark{
+    filter: brightness(85%) contrast(110%);
+}
+.leftBox{
+
+    width: 40%;
+}
+.button_holder{
+
+    width: 20%;
+}
+.rightBox{
+
+    width: 40%;
+}
+
+input[type="text"],
+select{
+    padding:5px;
+}
+
+.active{
+    transition: all .1s ease;
+    background-color: #888;
+    color: #000;;
+    border: dotted 1px black;
+    box-shadow: 0 2px 2px 0 rgba(97,97,97,.5);
+    margin-bottom: 1px;
+}
+
+.button-deactive{
+    opacity: .5;
+    box-shadow: none;
+}
+.button-deactive:hover{
+    opacity: .5;
+    box-shadow: none;
+}
